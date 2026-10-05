@@ -1,0 +1,283 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Gym</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+  <main class="max-w-7xl mx-auto p-6 space-y-12">
+
+    <!-- Exercise 1 -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Exercise 1 — Nine Positions</h2>
+
+      <div class="grid grid-cols-3 gap-4">
+
+        <!-- Top Left -->
+        <div>
+          <p class="text-sm font-semibold mb-2">Top Left</p>
+          <div class="flex h-64 border bg-white items-start justify-start p-2">
+            <div class="w-10 h-10 bg-blue-500 rounded"></div>
+          </div>
+        </div>
+
+        <!-- Top Center -->
+        <div>
+          <p class="text-sm font-semibold mb-2">Top Center</p>
+          <div class="flex h-64 border bg-white items-start justify-center p-2">
+            <div class="w-10 h-10 bg-blue-500 rounded"></div>
+          </div>
+        </div>
+
+        <!-- Top Right -->
+        <div>
+          <p class="text-sm font-semibold mb-2">Top Right</p>
+          <div class="flex h-64 border bg-white items-start justify-end p-2">
+            <div class="w-10 h-10 bg-blue-500 rounded"></div>
+          </div>
+        </div>
+
+        <!-- Middle Left -->
+        <div>
+          <p class="text-sm font-semibold mb-2">Middle Left</p>
+          <div class="flex h-64 border bg-white items-center justify-start p-2">
+            <div class="w-10 h-10 bg-blue-500 rounded"></div>
+          </div>
+        </div>
+
+        <!-- Center -->
+        <div>
+          <p class="text-sm font-semibold mb-2">Center</p>
+          <div class="flex h-64 border bg-white items-center justify-center p-2">
+            <div class="w-10 h-10 bg-blue-500 rounded"></div>
+          </div>
+        </div>
+
+        <!-- Middle Right -->
+        <div>
+          <p class="text-sm font-semibold mb-2">Middle Right</p>
+          <div class="flex h-64 border bg-white items-center justify-end p-2">
+            <div class="w-10 h-10 bg-blue-500 rounded"></div>
+          </div>
+        </div>
+
+        <!-- Bottom Left -->
+        <div>
+          <p class="text-sm font-semibold mb-2">Bottom Left</p>
+          <div class="flex h-64 border bg-white items-end justify-start p-2">
+            <div class="w-10 h-10 bg-blue-500 rounded"></div>
+          </div>
+        </div>
+
+        <!-- Bottom Center -->
+        <div>
+          <p class="text-sm font-semibold mb-2">Bottom Center</p>
+          <div class="flex h-64 border bg-white items-end justify-center p-2">
+            <div class="w-10 h-10 bg-blue-500 rounded"></div>
+          </div>
+        </div>
+
+        <!-- Bottom Right -->
+        <div>
+          <p class="text-sm font-semibold mb-2">Bottom Right</p>
+          <div class="flex h-64 border bg-white items-end justify-end p-2">
+            <div class="w-10 h-10 bg-blue-500 rounded"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+<!-- Exercise 2 -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Exercise 2 — Navbar</h2>
+
+      <nav class="flex items-center justify-between gap-6 bg-white border rounded-lg p-4">
+
+        <div class="font-bold text-xl text-blue-600">
+          MyLogo
+        </div>
+
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-blue-600">Home</a>
+          <a href="#" class="hover:text-blue-600">About</a>
+          <a href="#" class="hover:text-blue-600">Services</a>
+          <a href="#" class="hover:text-blue-600">Contact</a>
+        </div>
+
+        <button
+          class="rounded-lg bg-blue-600 px-5 py-2 text-white
+                 hover:bg-blue-700
+                 focus-visible:outline-none
+                 focus-visible:ring-2
+                 focus-visible:ring-blue-500
+                 focus-visible:ring-offset-2">
+          Sign up
+        </button>
+
+      </nav>
+    </section>
+
+<!-- Exercise 3 -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Exercise 3 — Comment List</h2>
+
+      <div class="space-y-6">
+
+        <!-- Comment 1 -->
+        <article class="flex gap-4 bg-white border rounded-lg p-4">
+          <div class="shrink-0">
+            <div class="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold">
+              BS
+            </div>
+          </div>
+
+          <div class="min-w-0">
+            <h3 class="font-semibold">belise uwase</h3>
+            <p class="text-sm text-gray-500 mb-2">2 hours ago</p>
+            <p>
+              This layout exercise is really helpful. I am getting more
+              comfortable with Tailwind flexbox utilities.
+            </p>
+          </div>
+        </article>
+
+        <!-- Comment 2 — Long Text -->
+        <article class="flex gap-4 bg-white border rounded-lg p-4">
+          <div class="shrink-0">
+            <div class="w-12 h-12 rounded-full bg-green-500 text-white flex items-center justify-center font-bold">
+              KA
+            </div>
+          </div>
+
+          <div class="min-w-0">
+            <h3 class="font-semibold">kayiranga</h3>
+            <p class="text-sm text-gray-500 mb-2">1 hour ago</p>
+            <p class="break-words">
+              This is a deliberately very long comment to demonstrate the
+              media-object pattern and prove that the avatar remains at its
+              proper size even when the text becomes extremely long. The
+              important Tailwind classes here are shrink-0 on the avatar
+              container and min-w-0 on the text container, which allows the
+              text content to shrink and wrap instead of breaking the entire
+              layout or forcing the avatar to become smaller.
+            </p>
+          </div>
+        </article>
+
+        <!-- Comment 3 -->
+        <article class="flex gap-4 bg-white border rounded-lg p-4">
+          <div class="shrink-0">
+            <div class="w-12 h-12 rounded-full bg-purple-500 text-white flex items-center justify-center font-bold">
+                U
+            </div>
+          </div>
+
+          <div class="min-w-0">
+            <h3 class="font-semibold">Uwase</h3>
+            <p class="text-sm text-gray-500 mb-2">30 minutes ago</p>
+            <p>
+              The min-w-0 trick is especially useful when working with flex
+              layouts and long content.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+    <!-- Exercise 4 -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Exercise 4 — Dashboard Grid</h2>
+
+      <div class="grid grid-cols-4 gap-4">
+
+        <!-- Spans 2 columns -->
+        <div class="col-span-2 rounded-lg bg-blue-500 text-white p-6 min-h-32">
+          <h3 class="font-bold text-xl">Card 1</h3>
+          <p>Spans 2 columns</p>
+        </div>
+
+        <div class="rounded-lg bg-white border p-6">
+          <h3 class="font-bold text-xl">Card 2</h3>
+          <p>Normal card</p>
+        </div>
+
+        <!-- Spans 2 rows -->
+        <div class="row-span-2 rounded-lg bg-purple-500 text-white p-6">
+          <h3 class="font-bold text-xl">Card 3</h3>
+          <p>Spans 2 rows</p>
+        </div>
+
+        <div class="rounded-lg bg-white border p-6">
+          <h3 class="font-bold text-xl">Card 4</h3>
+          <p>Normal card</p>
+        </div>
+
+        <div class="rounded-lg bg-white border p-6">
+          <h3 class="font-bold text-xl">Card 5</h3>
+          <p>Normal card</p>
+        </div>
+
+        <!-- Full width -->
+        <div class="col-span-full rounded-lg bg-green-500 text-white p-6">
+          <h3 class="font-bold text-xl">Card 6</h3>
+          <p>Spans the full width</p>
+        </div>
+
+      </div>
+    </section>
+  <!-- Exercise 5 -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Exercise 5 — Holy Grail</h2>
+
+      <div class="min-h-screen grid grid-rows-[auto_1fr_auto] bg-white border rounded-lg overflow-hidden">
+
+        <!-- Header -->
+        <header class="bg-gray-800 text-white p-6">
+          <h3 class="text-xl font-bold">Header</h3>
+        </header>
+
+        <!-- Main area -->
+        <div class="grid grid-cols-[220px_1fr]">
+
+          <!-- Sidebar -->
+          <aside class="w-[220px] bg-gray-200 p-6">
+            <h3 class="font-bold mb-4">Sidebar</h3>
+
+            <nav class="space-y-2">
+              <a href="#" class="block hover:text-blue-600">Dashboard</a>
+              <a href="#" class="block hover:text-blue-600">Profile</a>
+              <a href="#" class="block hover:text-blue-600">Settings</a>
+            </nav>
+          </aside>
+
+          <!-- Main -->
+          <main class="p-6 min-w-0">
+            <h3 class="text-2xl font-bold mb-4">Main Content</h3>
+            <p>
+              This is the main content area. The sidebar is 220px wide and
+              the main area takes the remaining available space.
+            </p>
+          </main>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white p-6">
+          <p>Footer</p>
+        </footer>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
+
+
+    
