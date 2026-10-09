@@ -1,0 +1,203 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-950 dark:text-white">
+
+  <!-- Task 2: Navbar -->
+  <nav class="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 px-4 lg:px-8 py-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">ShopZone</h1>
+
+      <!-- Hamburger: phones and tablets below md -->
+      <button class="md:hidden border border-gray-300 dark:border-gray-600 rounded-lg p-2"
+              aria-label="Open navigation menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+
+      <!-- Links: md and above -->
+      <ul class="hidden md:flex gap-6 font-medium">
+        <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#products" class="hover:text-blue-600">Products</a></li>
+        <li><a href="#about" class="hover:text-blue-600">About</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Task 4: Hero section -->
+  <section id="home" class="max-w-7xl mx-auto px-4 lg:px-8 py-8 lg:py-16">
+    <div class="flex flex-col md:flex-row items-center gap-8 lg:gap-12">
+      <div class="w-full md:w-1/2">
+        <h2 class="text-3xl lg:text-5xl font-bold leading-tight mb-4">
+          Discover Your Perfect Products
+        </h2>
+
+        <p class="text-gray-600 dark:text-gray-300 text-lg mb-6">
+          Find quality products at affordable prices.
+          Explore our collection and choose what you love.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="#products"
+             class="w-full sm:w-auto text-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+            Shop Now
+          </a>
+
+          <a href="#about"
+             class="w-full sm:w-auto text-center border border-gray-300 dark:border-gray-600 px-6 py-3 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2">
+        <img src="images/clothes.jpg"
+     alt="Shirt"
+     class="w-full h-100 object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- Task 1: Product card grid -->
+  <section id="products" class="bg-gray-50 dark:bg-gray-900 py-8 lg:py-12 px-4 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-2xl lg:text-3xl font-bold mb-6 lg:mb-8">
+        Our Products
+      </h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8">
+
+        <!-- Card 1 -->
+        <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm">
+          <img src="images/watch.jpeg" alt="watch" class="w-full h-48 object-cover">
+          <div class="p-4 lg:p-5">
+            <h3 class="font-bold text-lg">watch</h3>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">
+              elegance in every day</p>
+            <p class="text-blue-600 font-bold mt-3">$30.00</p>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm">
+          <img src="images/shoes.jpeg" alt="Red sneaker" class="w-full h-48 object-cover">
+          <div class="p-4 lg:p-5">
+            <h3 class="font-bold text-lg">Sport Shoes</h3>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Comfort for every step.</p>
+            <p class="text-blue-600 font-bold mt-3">$60.00</p>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm">
+          <img src="images/headphone.jpeg" alt="Headphones" class="w-full h-48 object-cover">
+          <div class="p-4 lg:p-5">
+            <h3 class="font-bold text-lg">Headphones</h3>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Enjoy your favorite music.</p>
+            <p class="text-blue-600 font-bold mt-3">$35.00</p>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm">
+          <img src="images/handbag.jpeg" alt="Handbag" class="w-full h-48 object-cover">
+          <div class="p-4 lg:p-5">
+            <h3 class="font-bold text-lg">Handbag</h3>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">A stylish daily accessory.</p>
+            <p class="text-blue-600 font-bold mt-3">$50.00</p>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm">
+          <img src="images/camera.jpeg" alt="Camera" class="w-full h-48 object-cover">
+          <div class="p-4 lg:p-5">
+            <h3 class="font-bold text-lg">Digital Camera</h3>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Capture special moments.</p>
+            <p class="text-blue-600 font-bold mt-3">$120.00</p>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm">
+          <img src="images/chair.jpeg" alt="Modern chair" class="w-full h-48 object-cover">
+          <div class="p-4 lg:p-5">
+            <h3 class="font-bold text-lg">Modern Chair</h3>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Simple and comfortable.</p>
+            <p class="text-blue-600 font-bold mt-3">$85.00</p>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm">
+          <img src="images/perfume.jpeg" alt="Perfume bottle" class="w-full h-48 object-cover">
+          <div class="p-4 lg:p-5">
+            <h3 class="font-bold text-lg">Perfume</h3>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">A fresh and lasting scent.</p>
+            <p class="text-blue-600 font-bold mt-3">$40.00</p>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-sm">
+          <img src="images/watch.jpeg" alt="Minimal wristwatch" class="w-full h-48 object-cover">
+          <div class="p-4 lg:p-5">
+            <h3 class="font-bold text-lg">Smart Watch</h3>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Technology meets style.</p>
+            <p class="text-blue-600 font-bold mt-3">$75.00</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Task 3: Holy grail layout -->
+  <section id="about" class="max-w-7xl mx-auto px-4 lg:px-8 py-8 lg:py-12">
+    <h2 class="text-2xl lg:text-3xl font-bold mb-6">About Our Store</h2>
+
+    <div class="flex flex-col lg:flex-row gap-6 lg:gap-8">
+
+      <!-- Sidebar appears ABOVE main content on phones -->
+      <aside class="w-full lg:w-[220px] lg:shrink-0 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+        <h3 class="font-bold text-lg mb-3">Categories</h3>
+        <ul class="space-y-3 text-gray-600 dark:text-gray-300">
+          <li><a href="#products" class="hover:text-blue-600">Electronics</a></li>
+          <li><a href="#products" class="hover:text-blue-600">Fashion</a></li>
+          <li><a href="#products" class="hover:text-blue-600">Accessories</a></li>
+          <li><a href="#products" class="hover:text-blue-600">Home Products</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main content -->
+      <main class="flex-1 min-w-0 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5 lg:p-8">
+        <h3 class="text-xl font-bold mb-3">Welcome to ShopZone</h3>
+        <p class="text-gray-600 dark:text-gray-300 leading-7">
+          We offer a wide selection of quality products for everyday life.
+          Our goal is to make shopping easy, affordable and enjoyable.
+          Browse our product cards to discover your next favorite item.
+        </p>
+      </main>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 px-4 lg:px-8 py-6">
+    <div class="max-w-7xl mx-auto text-center text-gray-600 dark:text-gray-300">
+      <p>&copy; 2026 ShopZone. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
